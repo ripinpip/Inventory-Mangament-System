@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModifyPartsFormController">
+    <children>
+        <RadioButton fx:id="inHouse" layoutX="146.0" layoutY="40.0" mnemonicParsing="false" text="In-House">
+            <toggleGroup>
+                <ToggleGroup fx:id="toggleGroup" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="outsourced" layoutX="259.0" layoutY="40.0" mnemonicParsing="false" text="Outsourced" toggleGroup="$toggleGroup" />
+        <Text layoutX="45.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Part" />
+        <TextField fx:id="IDTextField" disable="true" layoutX="146.0" layoutY="83.0" promptText="Auto-Generated" />
+        <TextField fx:id="NameTextField" layoutX="146.0" layoutY="121.0" />
+        <TextField fx:id="InvTextField" layoutX="146.0" layoutY="161.0" />
+        <TextField fx:id="PriceTextField" layoutX="146.0" layoutY="200.0" />
+        <TextField fx:id="MaxTextField" layoutX="146.0" layoutY="240.0" />
+        <TextField fx:id="MinTextField" layoutX="366.0" layoutY="240.0" />
+        <TextField fx:id="DynamicTextField" layoutX="146.0" layoutY="279.0" />
+        <Button layoutX="316.0" layoutY="328.0" mnemonicParsing="false" onAction="#SaveModifiedPart" text="Save" />
+        <Button layoutX="366.0" layoutY="328.0" mnemonicParsing="false" onAction="#onCancelClicked" text="Cancel" />
+        <Label layoutX="63.0" layoutY="87.0" text="ID" />
+        <Label layoutX="54.0" layoutY="125.0" text="Name" />
+        <Label layoutX="61.0" layoutY="165.0" text="Inv" />
+        <Label layoutX="55.0" layoutY="204.0" text="Price/Cost" />
+        <Label layoutX="57.0" layoutY="244.0" text="Max" />
+        <Label layoutX="326.0" layoutY="244.0" text="Min" />
+        <Label fx:id="dynamicTextLabel" layoutX="52.0" layoutY="283.0" text="Machine ID" />
+    </children>
+</AnchorPane>

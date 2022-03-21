@@ -1,0 +1,43 @@
+MainFormController:
+An error I had to fix in this class was getting the search bars to work. I had to look up exactly how to do it without using a ton of if statements
+that would iterate through the arrays of parts and products.
+I would add more functionality to this class by adding in ways to sort the tables by their data.
+
+AddPartsFormController:
+An error I had to fix in this class was adding the checks into the save button. I had to make it work in an order and display the correct
+error messages according to each if statement. Keeping track of the checks and the error statements was a bit confusing.
+Another point of functionality that I would add in the page would to add a section where the user could write their own custom comments
+about the part.
+
+AddProductsFormController:
+An error I had to fix in this class was adding the associated parts to the table. I fixed this by adding a temporary Observable list in this class that was
+later saved into the Product.
+I would add more functionality to this page in the future by adding a search bar for the associated parts.
+
+InHouse:
+I didn't have any errors in this class except realizing that I needed to extend it from the Part class.
+Writing the set and get methods was pretty simple.
+
+Inventory:
+An error that I was having in this class was writing the lookup methods. I didn't write the loop correctly so if it found a match I wouldn't return the right part.
+I fixed it by having it return the part that was being iterated though that matched the id.
+A method that I would add to this would to be to add a lookup by name or id method that return a list with the results to be used by the search
+methods in the MainForm and the add and modify Product forms.
+
+ModifyPartsFormController:
+An error I had to fix in this class was bringing in the data from the Inventory array of parts. I solved it by getting the last clicked
+on part id from the MainFormController and running a search through the Inventory.java methods.
+Another point of functionality that I would add to this class would be to add in buttons to increase and decrease the inv as needed
+when the part is modified.
+
+ModifyProductsFormController:
+An error I had to fix in this class was the cancel button. Everytime I would press cancel the associated parts would still update.
+I have to use the FXCollections.observableArrayList() to the local associated parts array so it wouldn't reference back to the associated parts array in Product.java.
+I would add more functionality to this page in the future by adding a search bar for the associated parts.
+
+Outsourced:
+I didn't have any errors in this class except realizing that I needed to extend it from the Part class.
+Writing the set and get methods was pretty simple.
+
+Product:
+I didn't run into any error when I was writing this class and just stuck to what the UML document wanted me to do.
